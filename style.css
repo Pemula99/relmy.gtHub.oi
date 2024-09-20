@@ -1,0 +1,140 @@
+/* Mengatur reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background body dengan gradien yang elegan */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d4354 0%, #a43931 100%);
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Kontainer utama untuk keseluruhan halaman */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Bagian profil dengan desain pusat */
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 6px solid #ffb400;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+.profile h1 {
+    font-size: 2.5rem;
+    color: #1d4354;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.profile p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* Bagian biodata dan keterampilan */
+.biodata, .skills, .hobbies {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #a43931;
+    border-bottom: 4px solid #ffb400;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+ul li strong {
+    color: #a43931;
+}
+
+/* Gaya keterampilan */
+.skills ul li {
+    background-color: #1d4354;
+    color: #fff;
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.skills ul li:hover {
+    background-color: #ffb400;
+    color: #1d4354;
+}
+
+/* Bagian hobi */
+.hobbies p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
